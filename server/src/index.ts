@@ -13,7 +13,7 @@ app.use(express.json()); //Lets your server automatically parse JSON request bod
 // Calls your database connection function. This runs one time when the server starts.
 connectDB();
 
-app.get("/", (req: Request, res: Response) => {  //Test route, when you go to http://localhost:5000/ you will get API is running. This will need to be chnaged into a legit route
+app.get("/", (req: Request, res: Response) => {  //Test route, when you go to http://localhost:5173/ you will get API is running. This will need to be chnaged into a legit route
   res.send("API running"); 
 });
 
