@@ -17,7 +17,7 @@ app.get("/", (req: Request, res: Response) => {  //Test route, when you go to ht
   res.send("API running"); 
 });
 
-const PORT = process.env.PORT ? Number(process.env.PORT) : 5000; // What is is doing is PORT is assined if there is a .env file with it in there. If not it will default to 
+const PORT = process.env.PORT ? Number(process.env.PORT) : 5000; // What this is doing is PORT is assined if there is a .env file with it in there. If not it will default to 
     //port 5000
 app.listen(PORT, () => {  // The app is on, in the console if you inspect elemnt you will see Server running on port 5000, this is a temprale litrale and can change.
   console.log(`Server running on port ${PORT}…`); // Port may not always show as 5000

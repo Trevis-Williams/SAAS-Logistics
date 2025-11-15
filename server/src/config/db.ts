@@ -1,5 +1,4 @@
-// Need to Actually get our Mongo DB Info
-// WIll show errors until Info is implamneted
+// This functions purposes is for us to connect to MongoDB
 
 
 import mongoose from "mongoose";
