@@ -3,7 +3,8 @@
 
 # How to start app 
 ## npm install express mongoose cors dotenv in ROOT 
-## npm install --save-dev nodemon
+## npm install --save-dev @types/express @types/cors @types/node
+
 
 ## cd into client
 ## npm install axios react-router-dom

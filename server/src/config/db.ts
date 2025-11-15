@@ -1,0 +1,24 @@
+// Need to Actually get our Mongo DB Info
+// WIll show errors until Info is implamneted
+
+
+import mongoose from "mongoose";
+
+const connectDB = async (): Promise<void> => {
+  try {
+    const mongoURI = process.env.MONGO_URI as string;
+
+    if (!mongoURI) {
+      throw new Error("MONGO_URI is not defined in environment variables");
+    }
+
+    const conn = await mongoose.connect(mongoURI);
+
+    console.log(`MongoDB Connected: ${conn.connection.host}`);
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
+};
+
+export default connectDB;
